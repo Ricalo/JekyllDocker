@@ -1,7 +1,7 @@
 ## Build image
 
 ```
-docker build - < Dockerfile
+docker build -t jekyll- < Dockerfile
 ```
 
 ## Run container
