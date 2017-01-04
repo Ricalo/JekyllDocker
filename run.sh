@@ -8,5 +8,5 @@ set -o nounset
 set -x
 bundle install
 jekyll build
-htmlproofer ./_site
+htmlproofer --url-ignore "/feed.xml" ./_site
 jekyll serve "$@"
