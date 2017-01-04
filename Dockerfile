@@ -4,8 +4,8 @@ FROM ruby:2.3.1
 WORKDIR /usr/src/app
 ENV LANG C.UTF-8
 RUN gem install jekyll
+RUN gem install html-proofer
 # For Windows
 # CMD set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml --force_polling
 # Linux
 CMD set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml
-
