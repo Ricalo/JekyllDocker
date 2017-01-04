@@ -7,4 +7,6 @@ set -o nounset
 
 set -x
 bundle install
+jekyll build
+htmlproofer ./_site
 jekyll serve "$@"
