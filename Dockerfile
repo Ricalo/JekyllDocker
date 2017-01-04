@@ -8,4 +8,4 @@ RUN gem install html-proofer
 # For Windows
 # CMD set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml --force_polling
 # Linux
-CMD set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml
+ENTRYPOINT set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml
