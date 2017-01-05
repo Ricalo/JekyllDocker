@@ -9,6 +9,7 @@ docker build -t jekyll .
 ```
 docker run --tty --name your_container \
            --publish 4000:4000 \
+           --publish 35729:35729 \
            --restart unless-stopped \
            --volume $(pwd)/SampleSite:/usr/src/app \
            ricalo/jekyll
@@ -16,5 +17,5 @@ docker run --tty --name your_container \
 
 > **Note:** On Windows, append the following arguments:
 > ```bash
-> serve --config _config.yml,_config_dev.yml --force_polling
+> liveserve --config _config.yml,_config_dev.yml --force_polling
 > ```
