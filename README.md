@@ -16,5 +16,5 @@ docker run --tty --name your_container \
 
 > **Note:** On Windows, append the following arguments:
 > ```bash
-> --config _config.yml,_config_dev.yml --force_polling
+> serve --config _config.yml,_config_dev.yml --force_polling
 > ```
