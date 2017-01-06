@@ -5,4 +5,4 @@ ENV LANG C.UTF-8
 COPY run.sh /usr/local/bin/
 
 ENTRYPOINT ["run.sh"]
-CMD ["liveserve", "--config", "_config.yml,_config_dev.yml"]
+CMD ["serve"]
