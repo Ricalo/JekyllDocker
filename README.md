@@ -1,3 +1,15 @@
+# Docker Image for GitHub Pages Authoring
+
+This Docker image lets you easily author sites generated with [Jekyll](https://jekyllrb.com/), which powers GitHub Pages. No development environment setup required. When you run a container based on this image, you can edit and browse the files on your host while the container builds and serves the site.
+
+## How things work
+
+Docker lets you map the port where Jekyll publishes the site in the container to a port in the host. This allos you to point a browser in your host to something like `http://localhost:4000` to see the site and watch your changes.
+
+Docker also lets you map the root folder of a Jekyll project to a predefined path in the container. This allows you to edit your files in the host using your favorite editor. The container will pick up your changes and update the site automatically.
+
+You can even use Jekyll plugins. For example, you can use [Hawkins](https://github.com/awoo/hawkins) to automatically refresh your browser every time you update a page. No need to hit refresh anymore!
+
 ## Run the container
 
 docker run --publish [jekyll_port]:[jekyll_port] \
