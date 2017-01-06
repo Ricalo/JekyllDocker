@@ -8,5 +8,6 @@ set -o nounset
 set -x
 bundle install
 jekyll build
-htmlproofer --url-ignore "/feed.xml" ./_site
+# Validate HTML, but continue execution even if htmlproofer reports errors
+htmlproofer ./_site || true
 jekyll "$@"
