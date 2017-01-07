@@ -9,5 +9,5 @@ set -x
 bundle install
 jekyll build
 # Validate HTML, but continue execution even if htmlproofer reports errors
-htmlproofer ./_site || true
+htmlproofer ./_site || true &
 jekyll "$@"
