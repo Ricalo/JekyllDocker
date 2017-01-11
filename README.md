@@ -12,10 +12,7 @@ You can even use Jekyll plugins. For example, you can use [Hawkins](https://gith
 
 ## Run the container
 
-docker run --publish [jekyll_port]:[jekyll_port] \
-           --volume [jekyll_folder]:/usr/src/app \
-           [image]
-
+docker run --publish [jekyll_port]:[jekyll_port] --volume [jekyll_folder]:/usr/src/app [image]
 
 For example, the following command shows a simple way to run the container:
 
